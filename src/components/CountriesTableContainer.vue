@@ -96,7 +96,7 @@ export default defineComponent({
           minWidth: 230,
           maxWidth: 230,
           render(row) {
-            return h('div', { class: 'region-wrapper' }, [h(), h('span', row.region)])
+            return h('div', { class: 'region-wrapper' }, [h(IconLocation), h('span', row.region)])
           },
         },
         {

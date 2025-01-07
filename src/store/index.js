@@ -56,7 +56,7 @@ const store = createStore({
       const searchInput = state.searchValue.toLowerCase()
 
       return state.countries.filter((country) =>
-        generateSearchableStrings(country).some((str) => str.includes(searchInput)),
+        country.searchableStrings.some((str) => str.includes(searchInput)),
       )
     },
     isLoading(state) {
